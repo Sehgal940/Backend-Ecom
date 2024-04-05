@@ -5,7 +5,7 @@ const defaultData=async()=>{
          await prod.insertMany(prodl)
     }
     catch(error){
-        console.log('error in fetching')
+        console.log(error.message)
     }
 }
 module.exports={defaultData} 
